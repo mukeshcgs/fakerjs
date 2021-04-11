@@ -24,8 +24,15 @@ module.exports = {
             },
         ],
     },
+    // devServer: {
+    //     contentBase: path.resolve(__dirname, 'dist'),
+    //     watchContentBase: true,
+    // },
     devServer: {
         contentBase: path.resolve(__dirname, 'dist'),
         watchContentBase: true,
-    },
+        host: '0.0.0.0', //your ip address
+        port: 8080,
+        disableHostCheck: true,
+    }
 };
